@@ -289,7 +289,35 @@
   }
 }
 
+.appbarber h2{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
 //------------------//
+
+.image-container {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 90%; /* Ajuste conforme necessário */
+}
+
+.image-container img {
+  max-width: 45%; /* Ajuste conforme necessário */
+  height: auto;
+  margin: 0 10px; /* Espaçamento entre as imagens */
+}
+
+@media screen and (max-width: 768px) {
+  .image-container img {
+    max-width: 40%;
+    
+  }
+}
 
 // Footer
  
