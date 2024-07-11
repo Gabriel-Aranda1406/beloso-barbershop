@@ -45,6 +45,7 @@
       color:#dfb656
     }
 
+
     p{
       margin-top: -20px;
       font-weight: 800;
@@ -78,6 +79,25 @@
   .button-contact:hover{
     animation: scaleButton 0.8s alternate infinite;
     background-color: rgb(7,28,59);
+  }
+
+  .button-contact-2{
+    display: flex;
+    align-items: center;
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: rgb(7,28,59);
+    border: 2px solid #dfb656;
+    font-family: "Alexandria", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 14px 0;
+    border-radius: 8px;
+    justify-content: center;
+  }
+
+  .button-contact-2:hover{
+    animation: scaleButton 0.8s alternate infinite;
   }
   
   @keyframes scaleButton{
@@ -277,6 +297,15 @@
 
 .haircut-info a{
   color: white;
+}
+
+.allServices{
+  color: rgb(7,28,59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
 }
 
 @media screen and (max-width: 768px) {
