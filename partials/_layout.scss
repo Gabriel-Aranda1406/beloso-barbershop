@@ -306,6 +306,10 @@
   align-items: center;
   justify-content: center;
   padding: 14px;
+
+  h1{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
