@@ -870,7 +870,7 @@
 
 //Botão WhatsApp
 
-.btn-whatsapp {
+/* .btn-whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -934,6 +934,58 @@
     img {
       width: 56px;
       height: 56px;
+    }
+  }
+} */
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: -35px;
+  z-index: 99;
+
+  img{
+    max-width: 250px;
+    transition: transform 0.8s;
+  }
+
+  img:hover {
+    transform: scale(1.3);
+  }
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -80px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: $black-normal;
+  color: $white-normal;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-whatsapp {
+    img{
+      max-width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 380px){
+    .btn-whatsapp{
+      img{
+        max-width: 140px
+      }
     }
   }
 }
